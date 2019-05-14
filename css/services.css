@@ -1,0 +1,320 @@
+html {
+  scroll-behavior: smooth;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #e5212b;
+}
+
+::selection {
+  color: white;
+  background: #e5212b;
+}
+
+body
+{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-align: center;
+}
+
+h2
+
+{
+	font-size: 42px;
+	padding: 40px 0px 40px 0px;
+	color:#333;
+}
+
+h3{
+	font-size: 25px;
+	padding: 20px 0px 20px 0px;
+	color:#333;
+}
+
+p
+
+{
+	font-size: 20px;
+	color: #333;
+	line-height: 30px;
+}
+.content-width
+
+{
+	max-width: 960px;
+	margin: 0 auto;	
+}
+
+nav {
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: show;
+  transition: 0.4s;
+  position: fixed;
+  top: 0;
+  z-index:1;
+}
+
+.logo {
+  display: inline-block;
+	position: absolute;
+	padding-left: 2%;
+	left: 0;
+	top:0;
+	z-index: 2;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+
+}
+
+.nav-item a {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: white;
+	
+}
+
+.nav-item:hover {
+  background-color: white;
+}
+
+.nav-item:hover a {
+  color: #e5212b;
+}
+
+.logo img {
+  width: 175px;
+  vertical-align: middle;
+}
+
+
+#herobox
+
+{
+	background-image: url(../images/herobox.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	display: flex;
+	padding: 40px 0px;
+	align-items: center;
+ 	justify-content: center;
+	text-align: center;
+	color: white;
+}
+
+
+
+
+h1
+
+{
+	font-size: 67px;
+	padding: 50px 0px 10px;
+	text-shadow: 2px 2px 4px #000000;
+
+
+}
+
+#herobox p
+
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 20px;
+	color: white;
+	text-shadow: 2px 2px 4px #000000;
+
+}
+
+
+
+
+#two-buttons
+{
+	display:flex;
+	justify-content: center;
+	padding: 40px 0px 0px 0px;
+	font-size: 14px;
+	
+}
+
+#two-buttons a
+
+{
+	text-decoration: none;
+	color: white;
+	display: block;
+	border: 1px solid transparent;
+
+}
+
+
+.herobox-contact-button
+
+{
+	background-color: #e5212b;
+	border-radius: 4px;
+	color: white;
+	margin: 10px;
+	padding: 10px 30px;
+}
+
+
+
+#two-buttons a:hover{
+	color: #e5212b;
+	background-color: white;
+	border: 1px solid #e5212b;
+}
+
+
+
+.herobox-see-gallery-button
+{
+	background-color: #838587;
+	border: solid 1px white;
+	border-radius: 4px;
+	color: white;
+	margin: 10px;
+	padding: 10px 30px;
+	
+}
+
+
+
+.arrow
+{
+	padding: 40px 0px 20px 0px;
+
+}
+
+.arrow a {
+  display: inline-block;
+  border-radius: 50%;
+
+}
+
+
+
+a:hover .left:after, a:hover .top:after, a:hover .bottom:after, a:hover .right:after {
+  border-top: 0.5em solid #e5212b;
+  border-right: 0.5em solid #e5212b;
+}
+
+
+
+.bottom:after {
+  content: '';
+	display: inline-block;
+  margin-top: 0.6em;
+  width: 1.4em;
+  height: 1.4em;
+  border-top: 0.5em solid #fff;
+  border-right: 0.5em solid #fff;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  background-color: #fff;
+  padding: 10px 0px 20px 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container i{
+	color: #333;
+	font-size: 167px;
+}
+
+.grid-container > div {
+  background-color: #fff;
+  text-align: center;
+  padding: 30px;
+	
+}
+
+.grid-container p
+{
+	padding: 0px 0px 40px 0px;
+	text-align: justify;
+	
+}
+
+
+.grid-container > div > a
+
+{
+	background-color: #e5212b;
+	border-radius: 4px;
+	color: white;
+	margin: 10px;
+	padding: 10px 30px;
+	text-decoration: none;
+	
+}
+
+.contact-us:hover{
+	background-color: #fff;
+	color: #e5212b;
+	border: 1px solid #e5212b;
+}
+
+
+.right{
+	text-align: right;
+}
+
+
+
+footer{
+	background-color: #333;
+	color: white;
+}
+
+footer a
+
+{
+	color: white;
+}
+
+footer div{
+	
+	padding: 10px 0px;
+}
+
+footer i{
+	padding-left: 2%;
+}
+
+footer i:hover{
+	color:#e5212b
+}
+
+.cell-5 {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-column-gap: 1rem;
+}
+.cell-5 .cell {
+   background-color: #333;
+}
+
+.cell-6{
+	padding-left: 20px;
+}

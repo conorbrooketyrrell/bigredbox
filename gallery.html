@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<title>Big Red Box - Creative Videos</title>
+<meta charset="UTF-8"/>
+<meta name="description" content="Big Red Box SEO Search"/>
+<meta name="author" content="Conor Brooke-Tyrrell"/>
+<meta name="viewpoint" content="width=device-width,initial-scale=1.0"/>
+
+<!-- CSS Style Sheet-->
+<link type="text/css" rel="stylesheet" href="css/reset.css" />
+<link type="text/css" rel="stylesheet" href="css/gallery.css" />
+<link type="text/js" rel="stylesheet" href="js/master.js" />
+<!-- Insert Google Fonts Here https://fonts.google.com/ -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+
+<nav class="nav-bar">
+<a href="index.html"><img class ="logo" src="images/logo.1.2.png" alt="Big Red Box logo"></a>
+	<ul class="nav-links">
+		<li class="nav-item"><a href="#clients">Clients</a></li>
+		<li class="nav-item"><a href="contact-us.html">Contact Us</a></li>
+		<li class="nav-item"><a href="services.html">Services</a></li>
+		<li class="nav-item"><a href="gallery.html">Gallery</a></li>
+	</ul>
+</nav>
+<div id="herobox">
+	<div class="content-width">
+		<h1>Big Red Box Media</h1>
+		<p>Video, live streaming &amp graphic speacialist</p>
+		  <div class="arrow">
+   			<a href="#gallery">
+     			<span class="bottom"></span>
+    		</a>
+ 		 </div>
+	</div>	
+</div>
+	<div id="gallery">
+	
+	<h2>Gallery</h2>
+	</div>
+
+ 
+<div class="content-width"> 
+ <div id="videos">
+  <a data="297695519"><img src="images/big-red-box-gallery-showreel.jpg"></a>
+  <a data="302308337"><img src="images/big-red-box-gallery-kbc.jpg"></a>
+  <a data="318535656"><img src="images/big-red-box-gallery-indaver-ireland.jpg"></a>
+  <a data="274648202"><img src="images/big-red-box-gallery-nci.jpg"></a>
+  <a data="214818234"><img src="images/big-red-box-gallery-gaa.jpg"></a>
+  <a data="201356104"><img src="images/big-red-box-gallery-airtricty.jpg"></a>
+  
+
+
+</div>
+
+<div id="overlay">
+  <div class="modal">
+    <div id="close">X</div>
+    <div id="loader"></div>
+  </div>
+</div>
+	
+</div>	
+<footer class="cell cell-5">
+       <div class="cell cell-6">Big Red Box 2019</div>
+       <div class="cell cell-7"></div>
+       <div class="cell cell-8"></div>
+       <div class="cell cell-9">
+		   	<a href="mailto:james@bigredbox.ie?subject=Big Red Box Website Query"><i class="fas fa-envelope"></i></a>
+		   	<a href="https://www.youtube.com/user/bigredboxmedia"><i class="fab fa-youtube"></i></a>
+		   	<a href="https://www.facebook.com/BigRedBoxMedia/"><i class="fab fa-facebook"></i></a>
+	   		<a href="https://www.linkedin.com/in/james-tyrrell-08017b14/"><i class="fab fa-linkedin"></i></a>
+       </div>
+   </footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>	
+	$(document).ready(function() {
+  $('#videos a').each(function() {
+    var data = $(this).attr('data');
+  });
+
+  $('#videos a').click(function() {
+    var data = $(this).attr('data');
+    $('#loader').append('<iframe src="https://player.vimeo.com/video/'+data+'?autoplay=1" frameborder="0" allowfullscreen></iframe>');
+    $('#overlay').fadeIn(250);
+  });
+
+  $('#close').click(function() {
+    $('#overlay').fadeOut(250,function() {
+      $('#loader').html('');
+    });
+  });
+});
+	</script>
+</body>
+</html>
