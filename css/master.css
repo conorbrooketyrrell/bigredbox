@@ -107,6 +107,7 @@ nav {
  	justify-content: center;
 	text-align: center;
 	color: white;
+	overflow: hidden;
 
 }
 
@@ -540,6 +541,17 @@ footer i:hover{
 	.content-width{
 		max-width: 90%;
 	}
+		
+	.arrow{
+		display: none;
+	}
+		.services-felx{
+		flex-direction: column;
+	}
+	
+	#clients{
+		display: none;
+	}
 
 }
 @media  (max-width: 600px){
@@ -563,4 +575,8 @@ footer i:hover{
 		display: none;
 	}
 
+	
+	.services-felx{
+		flex-direction: column;
+	}
 }
