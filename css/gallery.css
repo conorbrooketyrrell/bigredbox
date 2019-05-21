@@ -393,8 +393,40 @@ h1
 
 }
 
+.button{
+	color: #fff;
+	background: #e5212b;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	padding: 10px 40px;
+	float: right;
+	margin-top: 30px;
+	text-decoration: none;
 
+}
 
+.button:hover{
+	color: #e5212b;
+	background: #fff;
+	border: 1px solid #e5212b;
+	border-radius: 4px;
+	padding: 10px 40px;
+	float: right;
+	margin-top: 30px;
+	text-decoration: none;
+
+}
+
+.button a:hover{
+	text-decoration: none;
+	color: #e5212b;
+
+}
+
+.button a{
+	text-decoration: none;
+	color: #fff;
+}
 .arrow
 {
 	padding: 40px 0px 20px 0px;
