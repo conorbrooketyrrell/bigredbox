@@ -17,15 +17,50 @@
 
 <body>
 
-<nav class="nav-bar">
-<a href="index.html"><img class ="logo" src="images/logo.1.2.png" alt="Big Red Box logo"></a>
-	<ul class="nav-links">
-		<li class="nav-item"><a href="#clients">Clients</a></li>
-		<li class="nav-item"><a href="contact-us.html">Contact Us</a></li>
-		<li class="nav-item"><a href="services.html">Services</a></li>
-		<li class="nav-item"><a href="gallery.html">Gallery</a></li>
-	</ul>
-</nav>
+  <!-- NAV -->
+  <div class="nav">
+      <a href="index.html" class="nav-logo"><img src="images/logo.1.2.png"></a>
+    <ul class="nav-menu">
+      <li class="nav-menu-item">
+        <a href="index.html" class="nav-menu-link">Home</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="contact-us.html" class="nav-menu-link">Contact Us</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="gallery.html" class="nav-menu-link">Gallery</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="services.html" class="nav-menu-link">Services</a>
+      </li>
+    </ul>
+    <div class="hamburger-icon" id="hamburger-icon" onclick="toggler()">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </div>
+  </div>
+  <!-- END OF NAV -->
+
+  <!-- SIDE-NAV -->
+  <div id="side-nav" class="side-nav">
+    <h3 class="side-nav-header">MENU</h3>
+    <ul class="side-nav-menu">
+       <li class="side-nav-item">
+        <a href="index.html" class="side-nav-link">Home</a>
+      </li>
+      <li class="side-nav-item">
+        <a href="contact-us.html" class="side-nav-link">Contact us</a>
+      </li>
+      <li class="side-nav-item">
+        <a href="gallery.html" class="side-nav-link">Gallery</a>
+      </li>
+      <li class="side-nav-item">
+        <a href="services.html" class="side-nav-link">Services</a>
+      </li>
+    </ul>
+  </div>
+  <!-- END OF SIDE-NAV -->
 <div id="herobox">
 	<div class="content-width">
 		<h1>Thanks... we'll be in touch</h1>
@@ -58,7 +93,14 @@
        </div>
    </footer>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
+	  <script>
+	function toggler() {
+    let mi = document.querySelector('#hamburger-icon').classList.toggle('active');
+    let sn = document.querySelector('#side-nav');
+
+    return mi ? sn.style.left = '0' : sn.style.left = '-200px';
+}
+	</script>	<script>
 	setTimeout(function() {
     setInterval(function() {
         $('#gif').attr('src',$('#gif').attr('src'))

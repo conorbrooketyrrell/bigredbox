@@ -16,37 +16,56 @@
 </head>
 
 <body>
+  <!-- NAV -->
+  <div class="nav">
+    <h2 class="nav-brand">
+      <a href="#" class="nav-logo"><img src="images/logo.1.2.png"></a>
+    </h2>
+    <ul class="nav-menu">
+      <li class="nav-menu-item">
+        <a href="#" class="nav-menu-link">Home</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="#" class="nav-menu-link">About</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="#" class="nav-menu-link">Contact</a>
+      </li>
+    </ul>
+    <div class="hamburger-icon" id="hamburger-icon" onclick="toggler()">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </div>
+  </div>
+  <!-- END OF NAV -->
 
-  <main>
-   <a id="logo"><img src="images/logo.1.2.png"</a>
-    <nav>
-      <div class="nav-cont">
-        <img src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-256.png" id="hamburger" />
-      </div>
-      <div id="list">
-        <a id="about" class="nav-buttons">About</a>
-        <a class="nav-buttons">Contact</a>
-        <a class="nav-buttons">Social</a>
-      </div>
-    </nav>
+  <!-- SIDE-NAV -->
+  <div id="side-nav" class="side-nav">
+    <h3 class="side-nav-header">MENU</h3>
+    <ul class="side-nav-menu">
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">Contact us</a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">Services</a>
+      </li>
+      <li class="side-nav-item">
+        <a href="#" class="side-nav-link">Gallery</a>
+      </li>
+    </ul>
+  </div>
+  <!-- END OF SIDE-NAV -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
-  <script src="./js/app.js"></script>
-</body>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
-  <script src="./js/app.js"></script>
   <script>
-  $(document).ready(function() {
+	function toggler() {
+    let mi = document.querySelector('#hamburger-icon').classList.toggle('active');
+    let sn = document.querySelector('#side-nav');
 
-  //toggle nav
-  $('#hamburger').on('click', function() {
-    $('#list').toggleClass('height-auto');
-    $('nav').toggleClass('height-fixed');
-
-  })
-
-})
+    return mi ? sn.style.left = '0' : sn.style.left = '-200px';
+}
 	</script>
 </body>
 </html>

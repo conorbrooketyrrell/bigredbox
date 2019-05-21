@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <title>Big Red Box - Creative Videos</title>
 <meta charset="UTF-8"/>
@@ -16,24 +16,58 @@
 </head>
 
 <body>
+  <!-- NAV -->
+  <div class="nav">
+      <a href="index.html" class="nav-logo"><img src="images/logo.1.2.png" alt="logo of big red box"></a>
+    <ul class="nav-menu">
+           <li class="nav-menu-item" id="active">
+        <a href="index.html" class="nav-menu-link">Home</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="contact-us.html" class="nav-menu-link">Contact Us</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="gallery.html" class="nav-menu-link">Gallery</a>
+      </li>
+      <li class="nav-menu-item">
+        <a href="services.html" class="nav-menu-link">Services</a>
+      </li>
+    </ul>
+    <div class="hamburger-icon" id="hamburger-icon" onclick="toggler()">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </div>
+  </div>
+  <!-- END OF NAV -->
 
-<nav class="nav-bar">
-<a href="#"><img class ="logo" src="images/logo.1.2.png" alt="Big Red Box logo"></a>
-	<ul class="nav-links">
-		<li class="nav-item"><a href="#clients">Clients</a></li>
-		<li class="nav-item"><a href="contact-us.html">Contact Us</a></li>
-		<li class="nav-item"><a href="services.html">Services</a></li>
-		<li class="nav-item"><a href="gallery.html">Gallery</a></li>
-	</ul>
-</nav>
+  <!-- SIDE-NAV -->
+  <div id="side-nav" class="side-nav">
+    <h3 class="side-nav-header">MENU</h3>
+    <ul class="side-nav-menu">
+      <li class="side-nav-item">
+        <a href="index.html" class="side-nav-link">Home</a>
+      </li>
+      <li class="side-nav-item">
+        <a href="contact-us.html" class="side-nav-link">Contact us</a>
+      </li>
+      <li class="side-nav-item">
+        <a href="gallery.html" class="side-nav-link">Gallery</a>
+      </li>
+      <li class="side-nav-item">
+        <a href="services.html" class="side-nav-link">Services</a>
+      </li>
+    </ul>
+  </div>
+  <!-- END OF SIDE-NAV -->
 <div id="herobox">
 <video autoplay muted loop id="myVideo">
-  <source src="video/Showreel FB.mp4" type="video/mp4">
+  <source src="video/Showreel-FB.mp4" type="video/mp4">
   Your browser does not support HTML5 video.
 </video>
 	<div class="content-width">
 		<h1>Big Red Box Media</h1>
-		<p>Video, live streaming &amp graphic speacialist</p>
+		<p>Video, live streaming &amp; graphic speacialist</p>
 		<div id="two-buttons">
 			<a href="contact-us.html" class="herobox-contact-button">Contact Us</a>
 			<a href="gallery.html" class="herobox-see-gallery-button">See Gallery</a>
@@ -59,24 +93,24 @@
 <div id="projectFacts" class="sectionClass">
     <div class="fullWidth eight columns">
         <div class="projectFactsWrap ">
-            <div class="item wow fadeInUpBig animated animated" data-number="12" style="visibility: visible;">
+            <div class="item wow fadeInUpBig animated animated" data-number="12265608" style="visibility: visible;">
                 <i class="fas fa-film"></i>
-                <p id="number1" class="number">12</p>
+                <p id="number1" class="number">10 mil</p>
                 <p>Video Views</p>
             </div>
-            <div class="item wow fadeInUpBig animated animated" data-number="55" style="visibility: visible;">
+            <div class="item wow fadeInUpBig animated animated" data-number="200" style="visibility: visible;">
                 <i class="far fa-smile"></i>
-                <p id="number2" class="number">55</p>
+                <p id="number2" class="number">200+</p>
                 <p>Happy clients</p>
             </div>
-            <div class="item wow fadeInUpBig animated animated" data-number="359" style="visibility: visible;">
+            <div class="item wow fadeInUpBig animated animated" data-number="3" style="visibility: visible;">
                 <i class="fa fa-coffee"></i>
-                <p id="number3" class="number">359</p>
-                <p>Cups of coffee</p>
+                <p id="number3" class="number">2.5</p>
+                <p>Daily cups of coffee</p>
             </div>
-            <div class="item wow fadeInUpBig animated animated" data-number="246" style="visibility: visible;">
+            <div class="item wow fadeInUpBig animated animated" data-number="1986523" style="visibility: visible;">
                 <i class="fas fa-thumbs-up"></i>
-                <p id="number4" class="number">246</p>
+                <p id="number4" class="number">2 mil</p>
                 <p>Likes</p>
             </div>
         </div>
@@ -106,7 +140,7 @@
 				</figure>
 				<figure>
 					<i class="fas fa-graduation-cap"></i>
-					<figcaption>Training &amp Educational</figcaption>
+					<figcaption>Training &amp; Educational</figcaption>
 				</figure>
 			</div>
 			<a href="services.html">Learn More</a>
@@ -118,9 +152,9 @@
 	<div id="clients">
 		<h2>Clients</h2>
 			<div class="fadein">
-  				<img src="../clients/Artboard 1.png" alt="picture of clients of Big Red Box">
-  				<img src="../clients/Artboard 2.jpg" alt="picture of clients of Big Red Box">
-  				<img src="../clients/Artboard 3.png" alt="picture of clients of Big Red Box">
+  				<img src="images/Artboard-1.png" alt="picture-of-clients-of-Big-Red-Box">
+  				<img src="images/Artboard-2.jpg" alt="picture-of-clients-of-Big-Red-Box">
+  				<img src="images/Artboard-3.png" alt="picture-of-clients-of-Big-Red-Box">
 			</div>
 		<p><i class="fas fa-quote-left"></i>We have worked with James and the team at Big Red Box for the last 8 months on the development and production of a corporate video. They are a wonderful company to work with – amiable, professional and tenacious. James clearly loves what he does, and the desire to truly “tell the story” is what shines through from beginning to end. As a client, I felt like the only client that mattered throughout the whole process, and the end result still makes me feel that way. Needless to say I would have no hesitation in recommending James and his team at Big Red Box.<i class="fas fa-quote-right"></i></p>	
 		<p class="fontsize14"><span class="red">Imogen Gold</span> Contact Centre Manager at Top Oil – Fueling Ireland</p>
@@ -134,7 +168,7 @@
        <div class="cell cell-7"></div>
        <div class="cell cell-8"></div>
        <div class="cell cell-9">
-		   	<a href="mailto:james@bigredbox.ie?subject=Big Red Box Website Query"><i class="fas fa-envelope"></i></a>
+		   	<a href="mailto:james@bigredbox.ie"><i class="fas fa-envelope"></i></a>
 		   	<a href="https://www.youtube.com/user/bigredboxmedia"><i class="fab fa-youtube"></i></a>
 		   	<a href="https://www.facebook.com/BigRedBoxMedia/"><i class="fab fa-facebook"></i></a>
 	   		<a href="https://www.linkedin.com/in/james-tyrrell-08017b14/"><i class="fab fa-linkedin"></i></a>
@@ -143,7 +177,14 @@
    
    
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	
+	  <script>
+	function toggler() {
+    let mi = document.querySelector('#hamburger-icon').classList.toggle('active');
+    let sn = document.querySelector('#side-nav');
+
+    return mi ? sn.style.left = '0' : sn.style.left = '-200px';
+}
+	</script>
 	<script>
 // Get the video
 var video = document.getElementById("myVideo");
@@ -174,5 +215,33 @@ function myFunction() {
 	  },6000);
 });
 		</script>
+		<script>
+		$.fn.jQuerySimpleCounter = function( options ) {
+	    var settings = $.extend({
+	        start:  0,
+	        end:    100,
+	        easing: 'swing',
+	        duration: 400,
+	        complete: ''
+	    }, options );
+
+	    var thisElement = $(this);
+
+	    $({count: settings.start}).animate({count: settings.end}, {
+			duration: settings.duration,
+			easing: settings.easing,
+			step: function() {
+				var mathCount = Math.ceil(this.count);
+				thisElement.text(mathCount);
+			},
+			complete: settings.complete
+		});
+	};
+$('#number1').jQuerySimpleCounter({end: 12265608,duration: 10000});
+$('#number2').jQuerySimpleCounter({end: 200,duration: 5000});
+$('#number3').jQuerySimpleCounter({end: 2.5,duration: 2000});
+$('#number4').jQuerySimpleCounter({end: 1986523,duration: 10000});
+
+	</script>
 </body>
 </html>
