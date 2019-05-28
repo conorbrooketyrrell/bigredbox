@@ -7,7 +7,7 @@ html {
   background: #e5212b;
 }
 
-::selection {
+::selection {1.25em
   color: white;
   background: #e5212b;
 }
