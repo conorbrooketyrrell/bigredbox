@@ -558,7 +558,8 @@ footer a
 
 footer div{
 	
-	padding: 10px 0px;
+	padding: 
+	20px 0px;
 }
 
 footer i{
@@ -637,6 +638,9 @@ display:block
 
 }
 
-}
+.no{
+	   display:none
+	}
+
 }
 

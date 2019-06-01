@@ -751,6 +751,23 @@ color:#e5212b;
 	font-size: 24px
 }
 
+.learnmore{
+		background-color: #e5212b;
+	display: none;
+
+
+}
+
+.learnmore:hover{
+	color: #e5212b!important;
+	background-color: white;
+	border: 1px solid #e5212b;
+}
+
+#clients h2{
+	padding-top: 70px;
+}
+
 footer{
 	background-color: #333;
 	color: white;
@@ -764,7 +781,7 @@ footer a
 
 footer div{
 	
-	padding: 10px 0px;
+	padding: 20px 0px;
 }
 
 footer i{
@@ -786,6 +803,11 @@ footer i:hover{
 	width:50%;
 	background-color: #333;
 }
+
+	#clients img{
+		max-width: 100%;
+  		height: auto;
+	}
 
 @media (min-width: 600px) and (max-width: 900px){
 	
@@ -832,16 +854,18 @@ footer i:hover{
 	.arrow{
 		display: none;
 	}
+	
+	.arrow2{
+		display: none;
+	}
+	
 
 	
 	.services-felx{
 		flex-direction: column;
 	}
 	
-	#clients img{
-		max-width: 100%;
-  		height: auto;
-	}
+
 	
 	
 	footer div{
@@ -858,21 +882,6 @@ display:block
 
 }
 
-}
-
-
-.learnmore{
-		background-color: #e5212b;
-
-
-}
-
-.learnmore:hover{
-	color: #e5212b!important;
-	background-color: white;
-	border: 1px solid #e5212b;
-}
-
-#clients h2{
-	padding-top: 70px;
+	.learnmore{
+	display: inline-block;
 }
