@@ -780,15 +780,17 @@ footer i:hover{
 	color:#e5212b
 }
 
-.cell-5 {
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-column-gap: 1rem;
-}
-.cell-5 .cell {
-   background-color: #333;
+.footer-right{
+	float:right;
+	width:50%;
+		background-color: #333;
 }
 
+.footer-left{
+	float:left;
+	width:50%;
+	background-color: #333;
+}
 
 @media (min-width: 600px) and (max-width: 900px){
 	
@@ -842,4 +844,20 @@ footer i:hover{
 	.services-felx{
 		flex-direction: column;
 	}
+	
+	
+	footer div{
+		display: flex;
+		flex-direction: row;
+	} 
+	
+.footer-right{
+display:block;
+}
+
+.footer-left{
+display:block
+
+}
+
 }
