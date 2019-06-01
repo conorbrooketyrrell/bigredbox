@@ -808,9 +808,7 @@ footer i:hover{
 	.arrow{
 		display: none;
 	}
-		.services-felx{
-		flex-direction: column;
-	}
+
 	
 
 }
@@ -838,6 +836,11 @@ footer i:hover{
 	
 	.services-felx{
 		flex-direction: column;
+	}
+	
+	#clients img{
+		max-width: 100%;
+  		height: auto;
 	}
 	
 	
