@@ -486,3 +486,22 @@ footer i:hover{
 	background-color: #333;
 }
 
+
+@media  (max-width: 600px){
+	
+	
+	footer div{
+		display: flex;
+		flex-direction: row;
+	} 
+	
+.footer-right{
+display:block;
+}
+
+.footer-left{
+display:block
+
+}
+
+}
