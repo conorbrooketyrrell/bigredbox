@@ -379,6 +379,7 @@ span.hamburger-line {
   z-index: -1;
   background-size: cover;
   background-position: center;
+	min-width: 100%;
   overflow: hidden;
 }
 
